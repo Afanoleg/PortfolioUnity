@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     bool timerRunning = false;
 
+    public AudioClip Pickup;
+
 
     private Rigidbody rb;
     private int count;
@@ -20,7 +22,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        count = 8;
+        count = 0;
         SetCountText();
         winText.text = "";
         
@@ -49,15 +51,16 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Pick Up"))
         {
             other.gameObject.SetActive(false);
-            count = count - 1;
+            count++;
             SetCountText();
+            GetComponent<AudioSource>().PlayOneShot(Pickup);
         }
     }
 
     void SetCountText()
     {
-        countText.text = "Score: " + count.ToString();
-        if (count <= 0)
+        countText.text = "Pick up: " + count.ToString();
+        if (count >= 8)
         {
             winText.text = "Well Done!";
             timerRunning = false;

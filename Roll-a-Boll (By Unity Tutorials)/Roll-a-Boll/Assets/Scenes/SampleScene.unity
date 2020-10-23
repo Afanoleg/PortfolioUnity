@@ -701,8 +701,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 10.1}
-  m_SizeDelta: {x: 332.0537, y: 182.5175}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 801.61816, y: 440.61945}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566674380
 MonoBehaviour:
@@ -725,7 +725,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8527c0b992b341a42945a1f873e97a61, type: 3}
-    m_FontSize: 63
+    m_FontSize: 90
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -777,7 +777,7 @@ MonoBehaviour:
   sharedProfile: {fileID: 11400000, guid: ccfb4e26030675b4ba384ba2d13afa5d, type: 2}
   isGlobal: 1
   blendDistance: 0
-  weight: 1
+  weight: 0.88
   priority: 0
 --- !u!4 &650289079
 Transform:
@@ -1764,7 +1764,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Text
+  m_Text: Score
 --- !u!222 &1541047398
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2002,7 +2002,7 @@ PrefabInstance:
     - target: {fileID: 501998111045252655, guid: 4da22bca7d7e1fd4aa9840d86c3a3cd1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.49
+      value: -7.96
       objectReference: {fileID: 0}
     - target: {fileID: 501998111045252655, guid: 4da22bca7d7e1fd4aa9840d86c3a3cd1,
         type: 3}
@@ -2012,7 +2012,7 @@ PrefabInstance:
     - target: {fileID: 501998111045252655, guid: 4da22bca7d7e1fd4aa9840d86c3a3cd1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.25
+      value: 8.59
       objectReference: {fileID: 0}
     - target: {fileID: 501998111045252655, guid: 4da22bca7d7e1fd4aa9840d86c3a3cd1,
         type: 3}
@@ -2270,3 +2270,4 @@ MonoBehaviour:
   timerText: {fileID: 1767243070}
   countText: {fileID: 1541047397}
   winText: {fileID: 566674380}
+  Pickup: {fileID: 0}
